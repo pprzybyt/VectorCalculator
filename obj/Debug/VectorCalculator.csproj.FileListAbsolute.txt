@@ -1,0 +1,17 @@
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\bin\Debug\VectorCalculator.exe.config
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\bin\Debug\VectorCalculator.exe
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\bin\Debug\VectorCalculator.pdb
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\App.g.cs
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator_MarkupCompile.cache
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator_MarkupCompile.lref
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\MainWindow.baml
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator.g.resources
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator.Properties.Resources.resources
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator.csproj.GenerateResource.Cache
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator.exe
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator.pdb
+C:\Users\Asus U30JC\Documents\Visual Studio 2015\Projects\VectorCalculator\VectorCalculator\obj\Debug\VectorCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\bin\Debug\VectorCalculator.exe.config
+C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.exe
+C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.pdb
