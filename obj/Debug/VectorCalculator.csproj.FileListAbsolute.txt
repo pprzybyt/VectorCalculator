@@ -25,3 +25,4 @@ C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.P
 C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.csproj.GenerateResource.Cache
 C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.exe
 C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.pdb
+C:\Users\Asus U30JC\Desktop\Github\VectorCalculator\obj\Debug\VectorCalculator.csprojResolveAssemblyReference.cache

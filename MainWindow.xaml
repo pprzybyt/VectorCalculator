@@ -41,17 +41,17 @@
 
         <Button x:Name="button" Content="CALCULATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="296" Margin="96,353,0,0" Height="85" FontSize="36" Click="button_Click"/>
         <Label x:Name="result" Content="" HorizontalAlignment="Left" Margin="96,443,0,0" VerticalAlignment="Top" Height="60" Width="575" FontSize="36" Background="#FF5E7CCB"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="556,14,0,0" VerticalAlignment="Top" Width="60" Height="44" RenderTransformOrigin="0.5,0.5" FontSize="25" DataContextChanged="comboBox_DataContextChanged">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="597,14,0,0" VerticalAlignment="Top" Width="42" Height="44" RenderTransformOrigin="0.5,0.5" FontSize="25" DataContextChanged="comboBox_DataContextChanged">
             <ComboBoxItem IsSelected="True" Content="2"/>
             <ComboBoxItem Content="3"/>
             <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
         </ComboBox>
         <Label x:Name="label4" Content="Choose how many force-angle pairs you want to merge:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.276,1.885" Margin="32,10,0,0" Height="48" Width="519" FontSize="20"/>
-        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="621,14,0,0" VerticalAlignment="Top" Width="108" Height="44" Click="button1_Click" FontSize="20"/>
+        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="639,14,0,0" VerticalAlignment="Top" Width="93" Height="44" Click="button1_Click" FontSize="20"/>
         <Button x:Name="button2" Content="CLEAR" HorizontalAlignment="Left" Margin="397,353,0,0" VerticalAlignment="Top" Width="274" Height="85" FontSize="36" Click="button2_Click"/>
-        <Label x:Name="label3" Content="   FORCE" HorizontalAlignment="Left" Margin="198,63,0,0" VerticalAlignment="Top" Height="48" Width="114" FontSize="20"/>
-        <Label x:Name="label6" Content="  ANGLE" HorizontalAlignment="Left" Margin="418,63,0,0" VerticalAlignment="Top" Width="107" FontSize="20" Height="42"/>
+        <Label x:Name="label3" Content=" FORCE [N]" HorizontalAlignment="Left" Margin="198,63,0,0" VerticalAlignment="Top" Height="48" Width="114" FontSize="20"/>
+        <Label x:Name="label6" Content=" ANGLE [°]" HorizontalAlignment="Left" Margin="418,63,0,0" VerticalAlignment="Top" Width="107" FontSize="20" Height="42"/>
 
 
     </Grid>
