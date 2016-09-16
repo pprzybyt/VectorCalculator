@@ -15,6 +15,15 @@ namespace VectorCalculator
         public enum Option {Angle, NoAngle}
 
 
+        public Pair ()
+        {
+        }
+
+        public Pair(Pair a, Pair b)
+            :this(a.XForce + b.XForce, a.YForce + b.YForce, Option.NoAngle)
+        {
+        }
+
         public Pair( double a, double b, Option o)
         {
             if (o == Option.Angle)

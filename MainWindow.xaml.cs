@@ -21,15 +21,51 @@ namespace VectorCalculator
     public partial class MainWindow : Window
     {
 
-        public Pair Vect1 { get; set; }
-        public Pair Vect2 { get; set; }
-        public ResultVector Vect3 {get; set;}
+
+        public List<StackPanel> Panel { get; set; }
+        public List<TextBox> Forces { get; set; }
+        public List<TextBox> Angles { get; set; }
+        public List<Pair> Vectors { get; set; }
+        public int Count { get; set; }
+
 
         public MainWindow()
         {
             InitializeComponent();
+            DefaultSettings();
         }
 
+        public void DefaultSettings()
+        {
+            Panel = new List<StackPanel>();
+            Forces = new List<TextBox>();
+            Angles = new List<TextBox>();
+            Vectors = new List<Pair>();
+
+            Panel.Add(stack3);
+            Panel.Add(stack4);
+            Panel.Add(stack5);
+
+            Forces.Add(textBox);
+            Forces.Add(textBox2);
+            Forces.Add(textBox4);
+            Forces.Add(textBox6);
+            Forces.Add(textBox8);
+
+            Angles.Add(textBox1);
+            Angles.Add(textBox3);
+            Angles.Add(textBox5);
+            Angles.Add(textBox7);
+            Angles.Add(textBox9);
+
+            Vectors.Add(new Pair());
+            Vectors.Add(new Pair());
+            Vectors.Add(new Pair());
+            Vectors.Add(new Pair());
+            Vectors.Add(new Pair());
+
+            this.Count = 2;
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -44,24 +80,68 @@ namespace VectorCalculator
                                 "\nRequired format is e.g. XX or XX,XX (X - digit)." +
                                 "\nPlease use \",\" insted of \".\"");
             }
-    
+
         }
 
-        public void LoadData ()
+        private void LoadData ()
         {
-            if(true)   
-            Vect1 = new Pair(double.Parse(textBox.Text), double.Parse(textBox1.Text), Pair.Option.Angle);
-            Vect2 = new Pair(double.Parse(textBox2.Text), double.Parse(textBox3.Text), Pair.Option.Angle);
+            for (int i = 0; i < this.Count; i++)
+                Vectors[i] = new Pair(Double.Parse(Forces[i].Text), Double.Parse(Angles[i].Text), Pair.Option.Angle);
+
         }
 
-        public void DisplayResult()
+        private Pair GetVector()
         {
-            Vect3 = new ResultVector(Vect1, Vect2);
-            result.Content = Vect3;
+            Pair vector = Vectors[0];
+
+            for(int i = 1; i<Count; i++)
+            {
+                vector = new Pair(vector, Vectors[i]);
+            }
+
+            return vector;
         }
 
-        
+        private void DisplayResult()
+        {
+            result.Content = GetVector();
+        }
 
-      
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (StackPanel s in Panel)
+                s.Visibility = Visibility.Hidden;
+
+            this.Count = int.Parse(comboBox.SelectionBoxItem.ToString());
+
+
+            for (int i = 0; i < Count - 2; i++)
+            {
+                Panel[i].Visibility = Visibility.Visible;
+            }
+
+            for (int i = 5; i> Count; i--)
+            {
+                Forces[i-1].Text = "";
+                Angles[i-1].Text = "";
+            }
+
+        }
+
+        private void comboBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (TextBox tb in Forces)
+                tb.Text = "";
+            foreach (TextBox tb in Angles)
+                tb.Text = "";
+
+            result.Content = "";
+        }
     }
 }

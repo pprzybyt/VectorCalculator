@@ -5,18 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VectorCalculator"
         mc:Ignorable="d"
-        Title="VectorCalculator" Height="543.314" Width="765.116">
+        Title="VectorCalculator" Height="553.814" Width="765.116">
     <Grid OpacityMask="#FF2D3A74" Background="#FF4369AA">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="58" Margin="232,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" FontSize="36"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="58" Margin="560,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="36" SpellCheck.IsEnabled="True"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="58" Margin="232,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" FontSize="36"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="58" Margin="560,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="36"/>
-        <Label x:Name="label" Content="1.   Force [N] " HorizontalAlignment="Left" Margin="28,54,0,0" VerticalAlignment="Top" Height="58" Width="199" FontSize="32"/>
-        <Label x:Name="label2" Content="2.   Force [N]" HorizontalAlignment="Left" Margin="28,167,0,0" VerticalAlignment="Top" Height="58" Width="199" FontSize="32"/>
-        <Label x:Name="label1" Content="Angle [°]" HorizontalAlignment="Left" Margin="421,54,0,0" VerticalAlignment="Top" Height="58" Width="134" FontSize="32"/>
-        <Label x:Name="label3" Content="Angle [°]" HorizontalAlignment="Left" Margin="421,172,0,0" VerticalAlignment="Top" Height="58" Width="132" FontSize="32"/>
-        <Button x:Name="button" Content="CALCULATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Margin="265,287,0,0" Height="85" FontSize="36" Click="button_Click"/>
-        <Label x:Name="result" Content="" HorizontalAlignment="Left" Margin="99,411,0,0" VerticalAlignment="Top" Height="60" Width="575" FontSize="26" Background="#FF5E7CCB"/>
+        <StackPanel x:Name="stack1" Margin="56,110,55,365" Orientation="Horizontal">
+            <Label x:Name="label" Content="                1." HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="144" FontSize="19"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" FontSize="19"/>
+            <Label x:Name="label1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="38"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="19" SpellCheck.IsEnabled="True"/>
+        </StackPanel>
+        <StackPanel x:Name="stack2" Margin="56,153,55,322" Orientation="Horizontal">
+            <Label x:Name="label2" Content="                2. " HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="144" FontSize="19"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" FontSize="19"/>
+            <Label x:Name="label1_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="38"/>
+            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" FontSize="19"/>
+        </StackPanel>
+        <StackPanel x:Name="stack3" Margin="56,196,55,279" Orientation="Horizontal" Visibility="Hidden" >
+            <Label x:Name="label5" Content="                3. " HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="144" FontSize="19"/>
+            <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="19"/>
+            <Label x:Name="label1_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="38"/>
+            <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="19"/>
+        </StackPanel>
+        <StackPanel x:Name="stack4" Margin="56,239,55,236" Orientation="Horizontal" Visibility="Hidden" >
+            <Label x:Name="label7" Content="                4. " HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="144" FontSize="19"/>
+            <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="19"/>
+            <Label x:Name="label1_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="38"/>
+            <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="19"/>
+        </StackPanel>
+        <StackPanel x:Name="stack5" Margin="56,282,55,193" Orientation="Horizontal" Visibility="Hidden" >
+            <Label x:Name="label9" Content="                5. " HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="142" FontSize="19"/>
+            <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" FontSize="19"/>
+            <Label x:Name="label1_Copy3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="38"/>
+            <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="19"/>
+        </StackPanel>
+
+
+        <Button x:Name="button" Content="CALCULATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="296" Margin="96,353,0,0" Height="85" FontSize="36" Click="button_Click"/>
+        <Label x:Name="result" Content="" HorizontalAlignment="Left" Margin="96,443,0,0" VerticalAlignment="Top" Height="60" Width="575" FontSize="36" Background="#FF5E7CCB"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="556,14,0,0" VerticalAlignment="Top" Width="60" Height="44" RenderTransformOrigin="0.5,0.5" FontSize="25" DataContextChanged="comboBox_DataContextChanged">
+            <ComboBoxItem IsSelected="True" Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <Label x:Name="label4" Content="Choose how many force-angle pairs you want to merge:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.276,1.885" Margin="32,10,0,0" Height="48" Width="519" FontSize="20"/>
+        <Button x:Name="button1" Content="OK" HorizontalAlignment="Left" Margin="621,14,0,0" VerticalAlignment="Top" Width="108" Height="44" Click="button1_Click" FontSize="20"/>
+        <Button x:Name="button2" Content="CLEAR" HorizontalAlignment="Left" Margin="397,353,0,0" VerticalAlignment="Top" Width="274" Height="85" FontSize="36" Click="button2_Click"/>
+        <Label x:Name="label3" Content="   FORCE" HorizontalAlignment="Left" Margin="198,63,0,0" VerticalAlignment="Top" Height="48" Width="114" FontSize="20"/>
+        <Label x:Name="label6" Content="  ANGLE" HorizontalAlignment="Left" Margin="418,63,0,0" VerticalAlignment="Top" Width="107" FontSize="20" Height="42"/>
+
 
     </Grid>
 </Window>
